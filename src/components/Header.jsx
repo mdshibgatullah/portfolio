@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa'; 
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,17 +18,20 @@ function Header() {
               <a href="#contact">Contact</a>
             </div>
             <a href="#contact" className="nav-cta">Let's talk</a>
+            
+            
             <button 
               className="burger" 
               onClick={() => setIsOpen(!isOpen)} 
               aria-label="Toggle menu"
             >
-              <span></span><span></span><span></span>
+              {isOpen ? <FaTimes /> : <FaBars />}
             </button>
           </nav>
         </div>
       </header>
 
+     
       <div className={`mobile-menu ${isOpen ? 'open' : ''}`} id="mobileMenu">
         <a href="#home" onClick={() => setIsOpen(false)}>Home</a>
         <a href="#services" onClick={() => setIsOpen(false)}>Services</a>
