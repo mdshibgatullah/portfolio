@@ -381,7 +381,6 @@ nav {
   height: 100%;
 }
 .service-card::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 85% 15%, var(--green-soft), transparent 60%); opacity: 0; transition: opacity .35s var(--ease); }
-.service-card:hover::before { opacity: 1; }
 .service-card:hover { transform: translateY(-8px); box-shadow: 0 20px 48px rgba(0, 0, 0, 0.45); border-color: var(--border-hover); }
 .service-icon { width: 54px; height: 54px; border-radius: var(--radius-sm); background: var(--green-soft); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; color: var(--green); position: relative; z-index: 1; }
 .service-icon svg { width: 24px; height: 24px; }
