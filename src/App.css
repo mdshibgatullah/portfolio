@@ -242,6 +242,12 @@ nav {
   .burger { 
     display: flex; 
   }
+  
+}
+@media(min-width: 861px) {
+  .mobile-menu {
+    display: none !important; 
+  }
 }
 
 
