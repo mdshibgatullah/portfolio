@@ -3,14 +3,15 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import TrustStrip from './components/TrustStrip';
 import Services from './components/Services';
-import Education from './components/Education';
+// import Education from './components/Education';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Resume from './components/Resume';
 
 function App() {
   useEffect(() => {
-    // Scroll dynamic styling for header
+
     const header = document.getElementById('header');
     const handleScroll = () => {
       if (window.scrollY > 40) {
@@ -20,7 +21,7 @@ function App() {
       }
     };
 
-    // Intersection Observer for micro-interaction fade-ins
+
     const revealEls = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver(
       (entries) => {
@@ -52,7 +53,8 @@ function App() {
         <Hero />
         <TrustStrip />
         <Services />
-        <Education />
+        {/* <Education /> */}
+        <Resume />
         <Portfolio />
         <Contact />
       </main>

@@ -388,19 +388,210 @@ nav {
 .service-card p { color: var(--text-secondary); font-size: 15px; position: relative; z-index: 1; }
 
 /* ==========================================================================
-   Education
+   Resume
    ========================================================================== */
-.why-list { display: flex; flex-direction: column; gap: 12px; margin-top: 32px; }
-.why-item { display: flex; align-items: center; gap: 14px; padding: 18px 22px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); font-weight: 500; font-size: 15px; transition: all .25s var(--ease); }
-.why-item:hover { border-color: var(--green); background: var(--green-soft); transform: translateX(6px); }
-.why-item .num { font-family: 'JetBrains Mono', monospace; color: var(--green); font-size: 13px; }
 
-.edu-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 28px; position: relative; overflow: hidden; transition: all .3s var(--ease); height: 100%; }
-.edu-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--green), transparent); }
-.edu-card:hover { transform: translateY(-4px); border-color: var(--border-hover); box-shadow: 0 16px 34px rgba(0, 0, 0, 0.4); }
-.edu-card h4 { font-size: 17px; margin-bottom: 12px; line-height: 1.3; }
-.edu-card p { color: var(--text-secondary); font-size: 14px; margin-bottom: 12px; }
-.edu-gpa { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--gold); font-weight: 500; }
+.bg-raised {
+  background: var(--bg, #08130D);
+  padding: 80px 0;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--green);
+  margin-bottom: 8px;
+}
+
+/* Why Hire Me Styles */
+.why-list { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 12px; 
+  margin-top: 32px; 
+  margin-bottom: 40px;
+}
+
+.why-item { 
+  display: flex; 
+  align-items: center; 
+  gap: 14px; 
+  padding: 18px 22px; 
+  background: var(--bg-card, #0d1310); 
+  border: 1px solid var(--border, #1a2620); 
+  border-radius: var(--radius-sm, 6px); 
+  font-weight: 500; 
+  font-size: 15px; 
+  transition: all .25s var(--ease); 
+  color: var(--text-primary, #ffffff);
+}
+
+.why-item:hover { 
+  border-color: var(--green); 
+  background: var(--green-soft, rgba(61, 220, 132, 0.05)); 
+  transform: translateX(6px); 
+}
+
+.why-item .num { 
+  font-family: 'JetBrains Mono', monospace; 
+  color: var(--green); 
+  font-size: 13px; 
+}
+
+
+.resume-btn-group {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 12px; 
+  margin-top: 25px;                 
+}
+
+.resume-tab-btn {
+  padding: 14px;
+  background: var(--bg-card, #0d1310);
+  border: 1px solid var(--border, #1a2620);
+  border-radius: var(--radius-sm, 6px);
+  color: var(--text-secondary, #a0a0a0);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.25s var(--ease);
+}
+
+.resume-tab-btn:hover,
+.resume-tab-btn.active {
+  background: var(--green-soft);
+  color: var(--text-primary);
+  border-color: var(--green);
+}
+
+/* Universal Cards & Grid Layouts */
+.edu-card { 
+  background: var(--bg-card, #0d1310); 
+  border: 1px solid var(--border, #1a2620); 
+  border-radius: var(--radius-md, 12px); 
+  padding: 24px; 
+  position: relative; 
+  overflow: hidden; 
+  transition: all .3s var(--ease); 
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.edu-card::before { 
+  content: ''; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  height: 2px; 
+  background: linear-gradient(90deg, var(--green), transparent); 
+}
+
+.edu-card:hover { 
+  transform: translateY(-4px); 
+  border-color: var(--green); 
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.4); 
+}
+
+.edu-card h4 { 
+  font-size: 16px; 
+  margin-bottom: 12px; 
+  line-height: 1.4;
+  color: var(--text-primary, #ffffff);
+}
+
+.edu-card p { 
+  color: var(--text-secondary, #a0a0a0); 
+  font-size: 13px; 
+  margin-bottom: 12px; 
+  line-height: 1.5;
+}
+
+.dept-text {
+  font-size: 12px;
+  color: var(--text-secondary);
+  opacity: 0.8;
+}
+
+.edu-gpa { 
+  font-family: 'JetBrains Mono', monospace; 
+  font-size: 12px; 
+  color: var(--gold, #ffd700); 
+  font-weight: 500; 
+  margin-top: auto;
+}
+
+/* Skills Adjustments */
+.skill-card {
+  padding: 16px 20px;
+  align-items: center;
+  text-align: center;
+}
+.skill-card h4 {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+/* About Layout Improvements */
+.about-list-container {
+  background: var(--bg-card, #0d1310);
+  border: 1px solid var(--border, #1a2620);
+  border-radius: var(--radius-md, 12px);
+  padding: 24px;
+}
+
+.about-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.about-li {
+  list-style: none;
+  font-size: 14px;
+  color: var(--text-secondary, #a0a0a0);
+  line-height: 1.6;
+  position: relative;
+  padding-left: 20px;
+}
+
+.about-li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--green);
+  font-weight: bold;
+}
+
+/* Dynamic State Entry Animation */
+.resume-animation {
+  animation: fadeSlideIn 0.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Customization */
+@media (max-width: 991px) {
+  .resume-btn-group {
+    margin-bottom: 20px;
+  }
+}
 
 /* ==========================================================================
    Portfolio
