@@ -819,7 +819,7 @@ nav {
 
 /* CTA Band Area */
 .cta-band {
-  background: linear-gradient(135deg, #123322 0%, #0B0F0E 60%);
+  background: var(--green-soft);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 72px;
@@ -827,7 +827,6 @@ nav {
   position: relative;
   overflow: hidden;
 }
-.cta-band::before { content: ''; position: absolute; width: 400px; height: 400px; background: var(--green-glow); opacity: .2; filter: blur(100px); top: -100px; left: 50%; transform: translateX(-50%); }
 .cta-band h2 { font-size: 34px; margin-bottom: 12px; position: relative; z-index: 1; }
 .cta-band p { color: var(--text-secondary); margin-bottom: 28px; font-size: 16px; position: relative; z-index: 1; }
 .cta-band .btn-portfolio-primary { position: relative; z-index: 1; }
@@ -843,3 +842,5 @@ footer { padding: 56px 0 32px; border-top: 1px solid var(--border); margin-top: 
 .footer-bottom { border-top: 1px solid var(--border); padding-top: 24px; }
 .footer-bottom p { color: var(--text-tertiary); font-size: 13px; margin-bottom: 0; }
 .footer-bottom .accent { color: var(--green); }
+
+.accent { color: var(--green); }

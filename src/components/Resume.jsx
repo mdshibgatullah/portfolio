@@ -68,13 +68,13 @@ const Resume = () => {
       <div className="container">
         <div className="row gy-5">
           
-          {/* Left Side: Why Hire Me (New Design) */}
+          
           <div className="col-lg-5 reveal">
             <div className="eyebrow">Why hire me</div>
             <h2 style={{ fontSize: '32px' }}>Beautiful Design. Smart Development. Proven Results.</h2>
             
 
-            {/* Navigation Buttons */}
+            
             <div className="resume-btn-group">
               {resumBtn.map((btn) => (
                 <button
@@ -88,11 +88,11 @@ const Resume = () => {
             </div>
           </div>
           
-          {/* Right Side: Dynamic Content (Background / Education) */}
+          
           <div className="col-lg-7 reveal">
             <div className="eyebrow">Background</div>
             
-            {/* Key tracking ensures full component unmount & smooth restart of entry animations */}
+            
             <div className="resume-animation" key={active.id}>
               <MyResume item={active} />
             </div>

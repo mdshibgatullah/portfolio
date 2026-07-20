@@ -62,7 +62,7 @@ function Portfolio() {
 
       <div className="section-head reveal">
           <div className="eyebrow">Portfolio</div>
-          <h2>My Recent Projects <span className="accent">Me</span></h2>
+          <h2>My <span className="accent">Recent Projects</span></h2>
           <p>A selection of builds that show how I turn a design into a working, responsive product.</p>
         </div>
 
