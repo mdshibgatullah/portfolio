@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaExternalLinkAlt, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import Img from '../assets/image/Hero.png';
+import Invertory from '../assets/image/inventory.png';
 
 function Portfolio() {
   const projectData = [
@@ -17,8 +18,8 @@ function Portfolio() {
       title: "Inventory Management System",
       desc: "A full-stack inventory management app developed using Laravel, Bootstrap, and MySQL for business analysis.",
       tags: ["Laravel", "Bootstrap", "PHP", "MySQL"],
-      image: Img, 
-      link: "#"
+      image: Invertory, 
+      link: "https://github.com/mdshibgatullah/sales-Inventory-Project"
     },
     {
       id: "03",
@@ -111,7 +112,7 @@ function Portfolio() {
           </div>
         </div>
 
-        {/* নতুন পজিশন: বক্স গুলোর নিচে এবং মাঝখানে অ্যারো বাটন */}
+       
         <div className="slider-arrows-bottom mt-5 d-flex justify-content-center">
           <button 
             onClick={prevSlide} 
