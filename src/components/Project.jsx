@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaExternalLinkAlt, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import Img from '../assets/image/Hero.png';
 import Invertory from '../assets/image/inventory.png';
 
-function Portfolio() {
+function Project() {
   const projectData = [
     {
       id: "01",
@@ -40,7 +40,28 @@ function Portfolio() {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const cardsPerPage = 3;
+
+  const getCardsPerPage = () => {
+    if (window.innerWidth <= 767) return 1; 
+    if (window.innerWidth <= 991) return 2; 
+    return 3; 
+  };
+
+  const [cardsPerPage, setCardsPerPage] = useState(getCardsPerPage());
+
+  useEffect(() => {
+    const handleResize = () => {
+      const newCardsPerPage = getCardsPerPage();
+      setCardsPerPage(newCardsPerPage);
+      
+      if (currentIndex > projectData.length - newCardsPerPage) {
+        setCurrentIndex(Math.max(0, projectData.length - newCardsPerPage));
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [currentIndex, projectData.length]);
 
   const nextSlide = () => {
     if (currentIndex < projectData.length - cardsPerPage) {
@@ -58,16 +79,12 @@ function Portfolio() {
     <section className="bg-raised projects-section" id="projects">
       <div className="container">
         
-       
-    
-
-      <div className="section-head reveal">
+        <div className="section-head reveal">
           <div className="eyebrow">Portfolio</div>
           <h2>My <span className="accent">Recent Projects</span></h2>
           <p>A selection of builds that show how I turn a design into a working, responsive product.</p>
         </div>
 
-       
         <div className="project-slider-window">
           <div 
             className="row g-4 project-slider-track"
@@ -79,7 +96,6 @@ function Portfolio() {
             {projectData.map((project) => (
               <div key={project.id} className="col-lg-4 col-md-6 slider-card-item">
                 <div className="project-card">
-                  
                   
                   <div className="project-thumb">
                     {project.image && typeof project.image === 'string' ? (
@@ -95,7 +111,6 @@ function Portfolio() {
                     </div>
                   </div>
 
-                  
                   <div className="project-body">
                     <h3>{project.title}</h3>
                     <p>{project.desc}</p>
@@ -112,7 +127,6 @@ function Portfolio() {
           </div>
         </div>
 
-       
         <div className="slider-arrows-bottom mt-5 d-flex justify-content-center">
           <button 
             onClick={prevSlide} 
@@ -135,4 +149,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default Project;

@@ -3,8 +3,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import TrustStrip from './components/TrustStrip';
 import Services from './components/Services';
-// import Education from './components/Education';
-import Portfolio from './components/Portfolio';
+import Project from './components/Project';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Resume from './components/Resume';
@@ -53,9 +52,8 @@ function App() {
         <Hero />
         <TrustStrip />
         <Services />
-        {/* <Education /> */}
         <Resume />
-        <Portfolio />
+        <Project />
         <Contact />
       </main>
       <Footer />
