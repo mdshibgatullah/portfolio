@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { FaExternalLinkAlt, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import Img from '../assets/image/Hero.png';
+import Ecommerce from '../assets/image/ecommerce.png';
 import Invertory from '../assets/image/inventory.png';
 
 function Project() {
   const projectData = [
     {
       id: "01",
-      title: "Online Education Platform",
-      desc: "A responsive online education website with a modern layout, course browsing, and student-facing pages.",
-      tags: ["HTML5", "CSS3", "JavaScript"],
-      image: Img, 
-      link: "#"
+      title: "Modern Fashion Store",
+      desc: "Find stylish outfits, accessories, and essentials designed to elevate your everyday look.",
+      tags: ["React", "Bootstrap", "CSS", "PHP Laravel"],
+      image: Ecommerce, 
+      link: "https://github.com/mdshibgatullah/ecommerce-backend"
     },
     {
       id: "02",
@@ -26,7 +26,7 @@ function Project() {
       title: "Tree Information Blog",
       desc: "A dedicated blog website focusing purely on nature, tree species identification, and biological environments.",
       tags: ["React.js", "TailwindCSS", "Vite"],
-      image: Img, 
+      image: Ecommerce, 
       link: "#"
     },
     {
