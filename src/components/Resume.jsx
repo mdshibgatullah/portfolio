@@ -44,10 +44,12 @@ const Resume = () => {
       headline: "About", 
       desc: "Get to know me as a professional.",
       myAbout: [
-        { fact: "I am passionate about frontend development and always eager to learn new technologies." },
-        { fact: "I love working with React.js and TailwindCSS to build modern UI." },
-        { fact: "I enjoy solving complex UI/UX problems to enhance user experience." },
-        { fact: "I am constantly improving my coding skills and exploring new frameworks." }
+        { fact: "I am passionate about building modern, high-performance web applications with exceptional user experiences." },
+        { fact: "I specialize in React.js, TailwindCSS, and frontend development to create fast and responsive interfaces." },
+        { fact: "I enjoy solving complex UI/UX challenges through research, creativity, and user-centered design." },
+        { fact: "I combine web development and graphic design skills to deliver visually appealing digital products." },
+        { fact: "I leverage Google Analytics and performance metrics to make informed design and development decisions." },
+        { fact: "I continuously explore emerging technologies and industry trends to enhance my skills and deliver better solutions." }
       ]
     }
   ];

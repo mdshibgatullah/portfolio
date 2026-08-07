@@ -2,6 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { FaExternalLinkAlt, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import Ecommerce from '../assets/image/ecommerce.png';
 import Invertory from '../assets/image/inventory.png';
+import Furniture from '../assets/image/furniture.png';
+import Education from '../assets/image/education.png';
+import Luxastate from '../assets/image/luxastate.png';
+import Brigate from '../assets/image/brigate.png';
+import Calculator from '../assets/image/calculator.png';
+import Beetls from '../assets/image/beetls.png';
 
 function Project() {
   const projectData = [
@@ -23,19 +29,52 @@ function Project() {
     },
     {
       id: "03",
-      title: "Tree Information Blog",
-      desc: "A dedicated blog website focusing purely on nature, tree species identification, and biological environments.",
+      title: "Furniture E-Commerce Landing Page",
+      desc: "A modern furniture e-commerce landing page featuring a dark hero banner, interactive product grid, feature blocks, customer review cards, and a clean, responsive layout.",
       tags: ["React.js", "TailwindCSS", "Vite"],
-      image: Ecommerce, 
-      link: "#"
+      image: Furniture, 
+      link: "https://mdshibgatullah.github.io/Panto-Furniture/"
     },
     {
       id: "04",
-      title: "E-Commerce Frontend Dashboard",
-      desc: "A clean and lightning-fast e-commerce shopping client built with fluid UI components and state logic.",
+      title: "Online Education Landing Page",
+      desc: "A responsive online education website layout showcasing key platform stats, popular courses, instructor cards, testimonials, and a user registration form.",
       tags: ["React.js", "Bootstrap", "Vite"],
-      image: "", 
-      link: "#"
+      image: Education, 
+      link: "https://mdshibgatullah.github.io/onlineEducation/"
+    },
+
+    {
+      id: "05",
+      title: "Property Rental Landing Page",
+      desc: "A modern real estate landing page featuring apartment listings, company stats, property categories, service highlights, and agent profiles.",
+      tags: ["HTML", "Bootstrap", "CSS"],
+      image: Luxastate, 
+      link: "https://mdshibgatullah.github.io/Luxestate/"
+    },
+    {
+      id: "06",
+      title: "Construction & Architecture Website Layout",
+      desc: "A responsive corporate construction website layout built with bold typography, orange accent CTA buttons, pricing tiers, and professional team showcases.",
+      tags: ["HTML", "CSS"],
+      image: Brigate, 
+      link: "https://mdshibgatullah.github.io/brigate/"
+    },
+    {
+      id: "07",
+      title: "Calculator",
+      desc: "A sleek, dark-mode calculator UI designed with modern neumorphic button depth and vibrant green and orange accents.",
+      tags: ["HTML", "CSS", "Javascript"],
+      image: Calculator, 
+      link: "https://mdshibgatullah.github.io/Calculator/"
+    },
+    {
+      id: "08",
+      title: "Creative Agency Landing Page",
+      desc: "A corporate agency layout featuring a full-width hero header, service section, design portfolio showcase, team member cards, and testimonials.",
+      tags: ["HTML", "CSS", "Bootstrap"],
+      image: Beetls, 
+      link: "https://mdshibgatullah.github.io/Beatls/"
     }
   ];
 
