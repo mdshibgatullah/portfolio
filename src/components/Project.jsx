@@ -8,11 +8,20 @@ import Luxastate from '../assets/image/luxastate.png';
 import Brigate from '../assets/image/brigate.png';
 import Calculator from '../assets/image/calculator.png';
 import Beetls from '../assets/image/beetls.png';
+import Blog from '../assets/image/blog.png';
 
 function Project() {
   const projectData = [
     {
       id: "01",
+      title: "The Freelancer's Journey",
+      desc: "Learn how to find clients, improve skills, manage projects, and create a sustainable freelance business from anywhere.",
+      tags: ["React", "Bootstrap", "CSS", "PHP Laravel"],
+      image: Blog, 
+      link: "https://github.com/mdshibgatullah/blog_backend"
+    },
+    {
+      id: "02",
       title: "Modern Fashion Store",
       desc: "Find stylish outfits, accessories, and essentials designed to elevate your everyday look.",
       tags: ["React", "Bootstrap", "CSS", "PHP Laravel"],
@@ -20,7 +29,7 @@ function Project() {
       link: "https://github.com/mdshibgatullah/ecommerce-backend"
     },
     {
-      id: "02",
+      id: "03",
       title: "Inventory Management System",
       desc: "A full-stack inventory management app developed using Laravel, Bootstrap, and MySQL for business analysis.",
       tags: ["Laravel", "Bootstrap", "PHP", "MySQL"],
@@ -28,7 +37,7 @@ function Project() {
       link: "https://github.com/mdshibgatullah/sales-Inventory-Project"
     },
     {
-      id: "03",
+      id: "04",
       title: "Furniture E-Commerce Landing Page",
       desc: "A modern furniture e-commerce landing page featuring a dark hero banner, interactive product grid, feature blocks, customer review cards, and a clean, responsive layout.",
       tags: ["React.js", "TailwindCSS", "Vite"],
@@ -36,7 +45,7 @@ function Project() {
       link: "https://mdshibgatullah.github.io/Panto-Furniture/"
     },
     {
-      id: "04",
+      id: "05",
       title: "Online Education Landing Page",
       desc: "A responsive online education website layout showcasing key platform stats, popular courses, instructor cards, testimonials, and a user registration form.",
       tags: ["React.js", "Bootstrap", "Vite"],
@@ -45,7 +54,7 @@ function Project() {
     },
 
     {
-      id: "05",
+      id: "06",
       title: "Property Rental Landing Page",
       desc: "A modern real estate landing page featuring apartment listings, company stats, property categories, service highlights, and agent profiles.",
       tags: ["HTML", "Bootstrap", "CSS"],
@@ -53,7 +62,7 @@ function Project() {
       link: "https://mdshibgatullah.github.io/Luxestate/"
     },
     {
-      id: "06",
+      id: "07",
       title: "Construction & Architecture Website Layout",
       desc: "A responsive corporate construction website layout built with bold typography, orange accent CTA buttons, pricing tiers, and professional team showcases.",
       tags: ["HTML", "CSS"],
@@ -61,7 +70,7 @@ function Project() {
       link: "https://mdshibgatullah.github.io/brigate/"
     },
     {
-      id: "07",
+      id: "08",
       title: "Calculator",
       desc: "A sleek, dark-mode calculator UI designed with modern neumorphic button depth and vibrant green and orange accents.",
       tags: ["HTML", "CSS", "Javascript"],
