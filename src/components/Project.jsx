@@ -136,10 +136,7 @@ function Project() {
         <div className="project-slider-window">
           <div 
             className="row g-4 project-slider-track"
-            style={{ 
-              transform: `translateX(-${currentIndex * (100 / cardsPerPage)}%)`,
-              transition: 'transform 0.5s cubic-bezier(0.25, 1, 0.5, 1)'
-            }}
+            style={{ '--track-x': `-${currentIndex * (100 / cardsPerPage)}%` }}
           >
             {projectData.map((project) => (
               <div key={project.id} className="col-lg-4 col-md-6 slider-card-item">

@@ -73,7 +73,7 @@ const Resume = () => {
           
           <div className="col-lg-5 reveal">
             <div className="eyebrow">Why hire me</div>
-            <h2 style={{ fontSize: '32px' }}>Beautiful Design. Smart Development. Proven Results.</h2>
+            <h2 className="resume-title">Beautiful Design. Smart Development. Proven Results.</h2>
             
 
             

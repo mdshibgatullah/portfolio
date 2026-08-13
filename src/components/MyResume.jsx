@@ -5,8 +5,8 @@ const MyResume = (props) => {
 
   return (
     <div>
-      <h2 style={{ fontSize: '32px', marginBottom: '12px' }}>My <span className="accent">{headline}</span></h2>
-      <p style={{ color: 'var(--text-secondary)', marginBottom: '32px' }}>{desc}</p>
+      <h2 className="resume-title mb-12">My <span className="accent">{headline}</span></h2>
+      <p className="text-secondary mb-32">{desc}</p>
 
       {/* Education Section */}
       {myEducation.length > 0 && (
