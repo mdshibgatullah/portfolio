@@ -15,13 +15,13 @@ const Resume = () => {
     },
     { 
       id: 1, 
-      headline: "Course and Certification", 
+      headline: "Courses & Certifications", 
       desc: "I have completed several computer-related courses. Below are the details.",
       myExperiences: [
-        { position: "Full Stack Web Development", company: "Code Jogot", duration: "2024 - 2025" },
-        { position: "PHP & Laravel", company: "UY Lab", duration: "2024 - 2025" },
-        { position: "Web Design", company: "Amader Academy", duration: "17/02/2024 - 15/06/2024" },
-        { position: "Office Application Program", company: "Youth Development Training Center", duration: "2018 - 2019" }
+        { position: "Full Stack Web Development", company: "Code Jogot", duration: "Completed: 2025" },
+        { position: "PHP & Laravel", company: "UY Lab", duration: "Completed: 2025" },
+        { position: "Web Design", company: "Amader Academy", duration: "Completed: 2024" },
+        { position: "Office Application Program", company: "Youth Development Training Center", duration: "Completed: 2019" }
       ]
     },
     { 
@@ -29,14 +29,14 @@ const Resume = () => {
       headline: "Skills", 
       desc: "Expert in Web Development, Core Frontend & Backend Stacks.",
       mySkills: [
-        { name: "HTML5 & CSS3", level: "Expert" },
-        { name: "TailwindCSS", level: "Expert" },
-        { name: "JavaScript", level: "Expert" },
-        { name: "React.js", level: "Expert" },
-        { name: "PHP", level: "Advance" },
+        { name: "HTML5 & CSS3", level: "Advanced" },
+        { name: "Bootstrap", level: "Advanced" },
+        { name: "JavaScript", level: "Advanced" },
+        { name: "React.js", level: "Advanced" },
+        { name: "PHP", level: "Intermediate" },
         { name: "Laravel", level: "Advance" },
-        { name: "Photoshop", level: "Advance" },
-        { name: "Illustrator", level: "Advance" }
+        { name: "Photoshop", level: "Intermediate" },
+        { name: "Illustrator", level: "Intermediate" }
       ]
     },
     { 
@@ -44,12 +44,12 @@ const Resume = () => {
       headline: "About", 
       desc: "Get to know me as a professional.",
       myAbout: [
-        { fact: "I am passionate about building modern, high-performance web applications with exceptional user experiences." },
-        { fact: "I specialize in React.js, TailwindCSS, and frontend development to create fast and responsive interfaces." },
-        { fact: "I enjoy solving complex UI/UX challenges through research, creativity, and user-centered design." },
-        { fact: "I combine web development and graphic design skills to deliver visually appealing digital products." },
-        { fact: "I leverage Google Analytics and performance metrics to make informed design and development decisions." },
-        { fact: "I continuously explore emerging technologies and industry trends to enhance my skills and deliver better solutions." }
+        { fact: "Passionate about building responsive and user-friendly web applications." },
+        { fact: "Experienced in React.js, Tailwind CSS, PHP, and Laravel." },
+        { fact: "Focused on creating clean, maintainable, and scalable code." },
+        { fact: "Strong interest in frontend development and modern UI implementation." },
+        { fact: "Continuously learning new technologies and development practices." },
+        { fact: "Committed to delivering high-quality digital solutions." }
       ]
     }
   ];

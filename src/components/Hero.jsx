@@ -9,7 +9,7 @@ function Hero() {
           <div className="col-lg-7 reveal">
             <div className="eyebrow">Full Stack Web Developer</div>
             <h1>Md. Shibgatullah Sifat — building <span className="accent">reliable web products.</span></h1>
-            <p className="lead">A passionate Full Stack Web Developer with a strong foundation in PHP, Laravel, and React.js. I build responsive, user-friendly applications and translate designs from Photoshop and Illustrator into clean, working code.</p>
+            <p className="lead">I build modern, fast, and scalable web applications using React.js and Laravel. From UI design to backend development, I help businesses transform ideas into powerful digital experiences.</p>
             <div className="btn-row">
               <a href="#contact" className="btn-portfolio btn-portfolio-primary">Contact me →</a>
               <a href="#projects" className="btn-portfolio btn-portfolio-secondary">View my work</a>
