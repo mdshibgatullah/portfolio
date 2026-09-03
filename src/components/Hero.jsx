@@ -1,7 +1,5 @@
 import React from 'react';
-import HeroImg from '../assets/image/22.png'
-// import HeroImg from '../assets/image/Hero2.jpg'
-// import HeroImg from '../assets/image/hero2.jpg'
+import HeroImg from '../assets/image/Hero.png'
 
 function Hero() {
   return (
